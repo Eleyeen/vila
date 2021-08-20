@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Villa2</string>
+    <string name="welcomeDes">Welcome to Patons Rock Beach Villas. We are a fully self Check-In service.
+To Check-in please press the check-in button.
+This will let us know you have arrived and allow you to ask for servicing.
+Once you check in your credit card will be charged unless otherwise arranged.
+If you have any questions or problems please contact us on 0800 306 697 . Your Hosts Kimberley and Wade hope you enjoy your stay
+</string>
+    <string name="wellcomeDesSec"> .</string>
+
+    <string name="thanksDes">When checking out its as easy as leaving the key on the table and walking out.
+If your thinking of booking again visit www.patonsrockbeachvillas.co.nz or call us on 0800 306 697
+We hope you enjoyed your stay with us at our Villas.
+
+</string>
+</resources>

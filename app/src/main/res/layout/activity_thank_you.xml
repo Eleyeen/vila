@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ThankYouActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivLogoThanks"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:src="@drawable/logo" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvWellCome"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ivLogoThanks"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvThanks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:text="Thank You !"
+                    android:textColor="@color/blue"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tvThanks"
+                    android:padding="15dp"
+                    android:text="When checking out it's as easy as leaving the key on the table and walking out.
+If your thinking of booking again visit www.patonsrockbeachvillas.co.nz or call us on 0800 306 697.
+We hope you enjoyed you're stay with us at our Villas."
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.agrawalsuneet.dotsloader.loaders.CircularDotsLoader
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            app:loader_animDur="100"
+            android:id="@+id/dlCircularDotsLoader"
+            app:loader_bigCircleRadius="42dp"
+            app:loader_circleRadius="14dp"
+            app:loader_defaultColor="@color/purple_500"
+            app:loader_firstShadowColor="@color/blue"
+            app:loader_secondShadowColor="@color/blue"
+            app:loader_selectedColor="@color/blue"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="60dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            app:loader_showRunningShadow="true" />
+
+        <TextClock
+            android:layout_below="@id/dlCircularDotsLoader"
+            android:layout_marginTop="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:textSize="25dp"
+            android:hint="2893"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/simpleDigitalClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="hh:mm:ss"
+            tools:targetApi="jelly_bean_mr1"
+            />
+
+  <TextView
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_below="@+id/simpleDigitalClock"
+            android:id="@+id/tvDateThanks"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:hint="Date"
+            android:textSize="25dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</ScrollView>

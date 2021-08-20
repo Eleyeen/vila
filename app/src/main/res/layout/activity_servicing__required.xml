@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ThankYouActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:src="@drawable/logo" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvWellCome"
+            android:layout_width="500dp"
+            android:layout_height="450dp"
+            android:layout_below="@id/ivLogo"
+            android:layout_marginLeft="40dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp">
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvServicing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:text="Servicing Required"
+                    android:textColor="@color/blue"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvServicingdes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvServicing"
+                    android:padding="15dp"
+                    android:text="If you require servicing please notify us the night before by pressing the button below.
+Servicing is undertaken from 10 am on stays 3 nights or longer."
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/btnServicing"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/tvServicingdes"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_check_out"
+                    android:padding="20dp"
+                    android:text="Request Servicing"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.agrawalsuneet.dotsloader.loaders.CircularDotsLoader
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            app:loader_animDur="100"
+            android:id="@+id/dlCircularDotsLoader"
+            app:loader_bigCircleRadius="42dp"
+            app:loader_circleRadius="14dp"
+            app:loader_defaultColor="@color/purple_500"
+            app:loader_firstShadowColor="@color/blue"
+            app:loader_secondShadowColor="@color/blue"
+            app:loader_selectedColor="@color/blue"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="60dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            app:loader_showRunningShadow="true" />
+
+        <TextClock
+            android:layout_below="@id/dlCircularDotsLoader"
+            android:layout_marginTop="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:textSize="25dp"
+            android:hint="2893"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/simpleDigitalClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="hh:mm:ss"
+            tools:targetApi="jelly_bean_mr1"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_below="@+id/simpleDigitalClock"
+            android:id="@+id/tvDateService"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:hint="Date"
+            android:textSize="25dp"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/btnCheckoutServicing"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:layout_below="@id/ivLogo"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/button_check_out"
+            android:padding="10dp"
+            android:text="Check-Out"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</ScrollView>
